@@ -7,9 +7,6 @@ $("span").click(function (event) {
 
     var LiContenedor = $(this).parent();
 
-
-
-
     LiContenedor.fadeOut(500, function () {
         $(this).remove();
 
@@ -24,7 +21,6 @@ $("input[type='text']").keypress(function (event) {
 
         var liNuevo = "<li><span><i class='fas fa-trash'></i></span>" + $(this).val() + "</li>"; // Generamos el <li> nuevo con el texto capturado del input
 
-
         $("ul").append(liNuevo) // Insertando el liNuevo al listado
         $(this).val(""); // Limpiar el input
     }
@@ -37,15 +33,10 @@ $("ul").on("click", "li", function () {
 // Borrar los items completados
 $("ul").on("click", "span", function (event) {
     event.stopPropagation();
-
     var LiContenedor = $(this).parent();
-
     LiContenedor.fadeOut(500, function () {
         $(this).remove();
-
-
     });
-
 });
 $(".fas fa-trash").click(function () {
     $("input").slideToggle()
