@@ -1,0 +1,114 @@
+body {
+    background: #DD5E89;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F7BB97, #DD5E89);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F7BB97, #DD5E89);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+#contenido {
+    width: 360px;
+    margin: 6% auto;
+    border: 2px solid grey;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    background-color: #f7f7f7;
+}
+
+.completado {
+    text-decoration: line-through;
+    color: gray;
+}
+
+h1 {
+    background-color: rgba(240, 57, 118, 0.644);
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Bowlby One', cursive;
+    font-weight: bold;
+    text-shadow: -1px white, 1px 0 white, 0 1px white, 0 -1pxwhite;
+    color: #fff;
+    text-shadow: rgba(240, 57, 118, 0.644) -1px 1px, rgba(240, 57, 118, 0.644) -2px 2px, rgba(240, 57, 118, 0.644) -3px 3px, rgba(240, 57, 118, 0.644) -4px 4px, rgba(240, 57, 118, 0.644) -5px 5px;
+    color: wheat;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+input {
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    border: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input:focus {
+    background-color: #fff;
+    outline: none;
+    border: 3px solid pi;
+}
+
+li:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.fas fa-trash {
+    float: left;
+}
+
+span {
+    background-color: #e74c3c;
+    color: white;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+
+.ocultar {
+    display: none;
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    display: block;
+    margin: auto;
+
+
+}
